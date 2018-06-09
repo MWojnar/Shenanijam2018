@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "62de7a17-eda7-491c-9ff5-5942e2bd5551",
+            "Value": {
+                "id": "69a15863-4ca8-4d30-9eba-f714551cbfc2",
+                "resourcePath": "notes\\compatibility_report_080618_2126272627.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "6ac011c7-8f6d-41f1-88e1-949b3fd0322f",
             "Value": {
                 "id": "f814efce-dd42-4a6f-91d3-d0ea9affbc70",
@@ -199,6 +207,14 @@
             }
         },
         {
+            "Key": "e7f6cf0a-dd49-4685-8546-48a6902406a5",
+            "Value": {
+                "id": "f36b14f1-42f2-4c1f-8420-86fdab816e4f",
+                "resourcePath": "extensions\\Easing_and_Tweening\\Easing_and_Tweening.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "ee096afa-de2c-4e82-a151-5610bbdb3b71",
             "Value": {
                 "id": "003fe2d2-aff4-442f-ba68-959b8636e586",
@@ -221,10 +237,18 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "fc875e45-1086-4528-a9b3-c767d950ed4f",
+            "Value": {
+                "id": "2b00ab0a-8965-43b2-bb1a-a3ac823766b5",
+                "resourcePath": "scripts\\script0\\script0.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        
+        "fc875e45-1086-4528-a9b3-c767d950ed4f"
     ],
     "tutorial": ""
 }

@@ -5,16 +5,6 @@
     "name": "Rope_Segment",
     "eventList": [
         {
-            "id": "0b6b36a8-b8fd-4ab9-8b30-e79c38c82705",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "89e76e2f-57e7-4651-8d24-1e699c8ceef6"
-        },
-        {
             "id": "6411a5a6-a5ce-465f-8a7f-8eadbd8543ca",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "89e76e2f-57e7-4651-8d24-1e699c8ceef6"
+        },
+        {
+            "id": "4154a49a-b91c-45c1-af40-4df20ae2a90e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "89e76e2f-57e7-4651-8d24-1e699c8ceef6"
         }
     ],

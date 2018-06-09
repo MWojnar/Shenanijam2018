@@ -1,24 +1,43 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+randomize();
 flame = instance_create_layer(x - 60, y, "Instances", Flame);
-rope1 = instance_create_layer(x, y, "Instances", Rope_Segment);
-var cur_x = x + 120;
-var cur_y = y;
-rope2 = instance_create_layer(cur_x, cur_y, "Instances", Rope_Segment);
-rope2.direction = 45;
-cur_x += lengthdir_x(120, 45);
-cur_y += lengthdir_y(120, 45);
-rope3 = instance_create_layer(cur_x, cur_y, "Instances", Rope_Segment);
-rope3.direction = -45;
-cur_x += lengthdir_x(120, -45);
-cur_y += lengthdir_y(120, -45);
-rope4 = instance_create_layer(cur_x, cur_y, "Instances", Rope_Segment);
-cur_x += 120;
-rope5 = instance_create_layer(cur_x, cur_y, "Instances", Rope_Segment);
-rope1.next_rope = rope2;
-rope2.next_rope = rope3;
-rope3.next_rope = rope4;
-rope4.next_rope = rope5;
-rope5.next_rope = noone;
-flame.curr_rope_seg = rope1;
+next_point_x = x + 1200;
+next_point_y = room_height / 4.0 + random(room_height / 2.0);
+var last_rope = noone;
+var first_rope_set = false;
+var first_rope = noone;
+while (next_point_x < room_width) {
+	var next_rope = instance_create_layer(x, y, "Instances", Rope_Segment);
+	if (!first_rope_set) {
+		first_rope_set = true;
+		first_rope = next_rope;
+	}
+	next_rope.direction = direction;
+	if (last_rope != noone) {
+		last_rope.next_rope = next_rope;
+	}
+	last_rope = next_rope;
+	x += lengthdir_x(120, direction);
+	y += lengthdir_y(120, direction);
+	dir_to_point = point_direction(x, y, next_point_x, next_point_y);
+	var dir_right = true;
+	if (dir_to_point - direction > 180 || (dir_to_point - direction > -180 && dir_to_point - direction < 0)) {
+		dir_right = false;
+	}
+	dir_max = abs(dir_to_point - direction);
+	dist = distance_to_point(next_point_x, next_point_y);
+	if (dist < 120 || next_point_x - x < 120) {
+		direction = dir_to_point;
+		next_point_x = x + 1200;
+		next_point_y = room_height / 4.0 + random(room_height / 2.0);
+	} else {
+		if (dir_right) {
+			direction += dir_max * (120.0 / dist);
+		} else {
+			direction -= dir_max * (120.0 / dist);
+		}
+	}
+}
+flame.curr_rope_seg = first_rope;

@@ -143,6 +143,22 @@
             }
         },
         {
+            "Key": "8bac529f-9a99-4857-9ef0-11cb431326bd",
+            "Value": {
+                "id": "0c9af80f-277a-4db5-b6d6-a75976c87b52",
+                "resourcePath": "sprites\\sprite1\\sprite1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c6fc47c-5767-4d65-8d00-711aca63ba0f",
+            "Value": {
+                "id": "d897b28f-adb3-4998-8fd7-64bc73d0c82b",
+                "resourcePath": "sprites\\spr_grass_tile\\spr_grass_tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7e3c163-e6e3-4f25-bb4a-6924f2731ce4",
             "Value": {
                 "id": "27a96b57-02be-4164-b75b-fd4633792d52",

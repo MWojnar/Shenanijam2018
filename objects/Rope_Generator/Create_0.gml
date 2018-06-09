@@ -8,7 +8,7 @@ next_point_y = room_height / 4.0 + random(room_height / 2.0);
 var last_rope = noone;
 var first_rope_set = false;
 var first_rope = noone;
-var turn_limit = 20;
+var turn_limit = 10;
 while (next_point_x < room_width) {
 	var next_rope = instance_create_layer(x, y, "Instances", Rope_Segment);
 	if (!first_rope_set) {

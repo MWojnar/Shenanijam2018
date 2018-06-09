@@ -20,8 +20,8 @@ while (next_point_x < room_width) {
 		last_rope.next_rope = next_rope;
 	}
 	last_rope = next_rope;
-	x += lengthdir_x(120, direction);
-	y += lengthdir_y(120, direction);
+	x += lengthdir_x(50, direction);
+	y += lengthdir_y(50, direction);
 	dir_to_point = point_direction(x, y, next_point_x, next_point_y);
 	var dir_right = true;
 	if (dir_to_point - direction > 180 || (dir_to_point - direction > -180 && dir_to_point - direction < 0)) {
@@ -29,7 +29,7 @@ while (next_point_x < room_width) {
 	}
 	dir_max = abs(dir_to_point - direction);
 	dist = distance_to_point(next_point_x, next_point_y);
-	dir_turn = dir_max * (120.0 / dist);
+	dir_turn = dir_max * (50.0 / dist);
 	if (dir_turn > turn_limit) {
 		dir_turn = turn_limit;	
 	}

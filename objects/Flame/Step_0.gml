@@ -9,7 +9,7 @@ if (curr_rope_seg != noone) {
 	var hsp = lengthdir_x(spd, dir);
 	var vsp = lengthdir_y(spd, dir);
 	x += hsp;
-	y += hsp;
+	y += vsp;
 	if (dist < spd) {
 	    var temp_rope = curr_rope_seg.next_rope;
 		instance_destroy(curr_rope_seg);

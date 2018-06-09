@@ -8,6 +8,7 @@ next_point_y = room_height / 4.0 + random(room_height / 2.0);
 var last_rope = noone;
 var first_rope_set = false;
 var first_rope = noone;
+var turn_limit = 10;
 while (next_point_x < room_width) {
 	var next_rope = instance_create_layer(x, y, "Instances", Rope_Segment);
 	if (!first_rope_set) {
@@ -28,16 +29,18 @@ while (next_point_x < room_width) {
 	}
 	dir_max = abs(dir_to_point - direction);
 	dist = distance_to_point(next_point_x, next_point_y);
-	if (dist < 120 || next_point_x - x < 120) {
-		direction = dir_to_point;
+	dir_turn = dir_max * (120.0 / dist);
+	if (dir_turn > turn_limit) {
+		dir_turn = turn_limit;	
+	}
+	if (x > next_point_x) {
 		next_point_x = x + 1200;
 		next_point_y = room_height / 4.0 + random(room_height / 2.0);
+	}
+	if (dir_right) {
+		direction += dir_turn;
 	} else {
-		if (dir_right) {
-			direction += dir_max * (120.0 / dist);
-		} else {
-			direction -= dir_max * (120.0 / dist);
-		}
+		direction -= dir_turn;
 	}
 }
 flame.curr_rope_seg = first_rope;

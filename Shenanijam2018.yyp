@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "13cbf2d9-5801-46f6-8f94-720dade26edd",
+            "Value": {
+                "id": "e4d70c4e-937a-4bb2-9732-4453b01972e8",
+                "resourcePath": "sprites\\sprite0\\sprite0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32b9ff2a-4368-4083-ad54-254c015e2d4c",
             "Value": {
                 "id": "6511e515-02f7-46f4-83c8-2a35485c09d4",
@@ -167,14 +175,6 @@
             }
         },
         {
-            "Key": "bd1272ea-2524-447c-a6cb-bcd4be9ded92",
-            "Value": {
-                "id": "1321a68b-2b52-465b-916b-30c6431c00f5",
-                "resourcePath": "paths\\path0\\path0.yy",
-                "resourceType": "GMPath"
-            }
-        },
-        {
             "Key": "c5b8543d-c744-4808-87af-e0e2c643fe50",
             "Value": {
                 "id": "f2f97d24-db79-4873-9b3c-2e7fe699f8c5",
@@ -245,18 +245,10 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
-        },
-        {
-            "Key": "fc875e45-1086-4528-a9b3-c767d950ed4f",
-            "Value": {
-                "id": "2b00ab0a-8965-43b2-bb1a-a3ac823766b5",
-                "resourcePath": "scripts\\script0\\script0.yy",
-                "resourceType": "GMScript"
-            }
         }
     ],
     "script_order": [
-        "fc875e45-1086-4528-a9b3-c767d950ed4f"
+        
     ],
     "tutorial": ""
 }
